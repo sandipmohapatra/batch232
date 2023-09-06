@@ -137,9 +137,12 @@ to remove a column
 syntax:- alter table <table name> drop column <column name>
 11) alter table student drop column phoneno;
 
+to modify the datatype of a column
+12)alter table student modify name char(50);
 
-
-
+to insert multiple rows
+13)insert into student(rollno,name,address) values(3,'sunil','hyderabad'),
+(4,'madhu','hyderabad'),(5,'peter','hyderabad'),(6,'Bibhash','calcutta');
 
 
 
