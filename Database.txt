@@ -1,6 +1,7 @@
 Database :-
 6 days
-
+6,7,8,11,12,13
+--------------------------------------------------------
 database :- structured,un-structured
 my-sql
 oracle
@@ -15,4 +16,116 @@ mongodb
 
 Database :-
 1)centralized database
-2)
+-----------------------------------------
+example:-(Bank)-ATM(domestic,international)
+There will be a centralized server where data will be stored.
+The data is secure and it is authenticated.
+example:- internet banking.giving (username/password).as soon as we do the transaction it will be reflected to the database server.
+advantages:-
+i)it is secured data management.
+ii)it manage data in a secured central repository.
+iii)It enables organizations to establish data standards.
+iv)It is less cost.
+----------------------------------------------------------------------------
+2)Distributed database
+-----------------------------------------
+It is distributed among database system of an organization.
+It is mainly used in the organization and for the organization.
+--------------------------------------------------------------------------------
+3)Relational database:-
+---------------------------------------
+Relation in the tables.
+--------------------------------------------
+Bank table(master table)
+accno,name,balance,address.
+---------------------------------------------------------------------------------------
+transaction table(child table)
+accno(refer to the bank table accno),withdraw,deposite
+------------------------------------------------------------------------------------
+ACID property
+-----------------------------
+1)Atomicity:-It will ensure that the data operation will complete with success or with failure.
+example:- withdraw money from the ATM.once it is debited you should get the money or the money should be again credited.
+
+2)consistency:-When we do a trasaction it should be a correct calculation before the trasaction and after the transaction.
+
+3)Isolation:-It should be secured.A person should not able to view other transactions happening to the same database.
+
+4)Durability:- once you make any change to the database it should remain same permanently.
+
+--------------------------------------------------------------
+4)difference between No-Sql and SQL :-
+-------------------------------------------------------------------
+SQL data will be in a structured format.
+
+sql---student table
+rollno,name,address,phoneno
+--------------------------------------------
+no-sql ---(amazon,facebook,flipcard,paytm...)
+It can store huge amount of data.
+example facebook:-(Document)
+p1---likes,photo,messages
+p2---uploads some vedios
+p3---likes ,comments
+different people storing different data.
+The data will be stored in key and value pair.(name-sandip,image-123.jpg,location-bangalore)
+--------------------------------------------------------------------------------------------------------------------------
+5)cloud database
+-----------------------------
+1)Amazon web service (DynamoDB)
+2)Google cloud SQL
+-------------------------------------------------------------------------------------------
+Relational Database Management System(RDBMS)
+---------------------------------------------------------------------------------
+1)My-SQL
+2)SQL server(microsoft product)
+3)Oracle
+---------------------------------------------------------------------
+My-Sql
+-----------------
+to display the databases
+1) show databases;
+
+to create a database
+2)create database mphasis232;
+
+to go into the database
+3)use mphasis232;
+
+to create a table
+4)create table student(rollno int,name varchar(30),address varchar(30));
+
+to view the structure of a table
+5)desc student;
+
+to insert data into the table
+6)insert into student values(1,'sandip','Bangalore');
+
+to view the data
+7)select * from student;
+
+to view selected data
+8)select rollno,name from student;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
