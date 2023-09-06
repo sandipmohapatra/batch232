@@ -181,6 +181,8 @@ update data
 20)update employee set salary=45000.50 where empno in(3,4);
 update employee set salary=55000.50 where empno=6;
 
+order by clause
+------------------------------------
 display the data in ascending order 
 21)select * from employee order by empno;
 select * from employee order by empno asc;
@@ -188,6 +190,45 @@ select * from employee order by empno asc;
 
 display the data in descending order 
 22)select * from employee order by empno desc;
+
+-------------------------------------------------------------------------
+Arithmatic operators
+---------------------------------
+1)select empno,name,address,salary,salary+1000 as salaryBonus from employee;
+2)select empno,name,address,salary,salary-1000 as decrementalsalary from employee;
+3)select empno,name,address,salary,salary*12 as Anualsalary from employee;
+4)select empno,name,address,salary,salary/30 as PerDaySalary from employee;
+5)select empno,name,address,salary,round(salary/30,2) as PerDaySalary from employee;
+6)create table employeeperday as select empno,name,address,salary,round(salary/30,2) as PerDaySalary from employee;
+------------------------------------------------------------------------------------------------------------------------------
+comparison operator
+-------------------------------
+1)select * from employee where salary=35000.5;
+2)select * from employee where salary>=35000.5;
+3)select * from employee where salary<=35000.5;
+4)select * from employee where salary>35000.5;
+5)select * from employee where salary<35000.5;
+-------------------------------------------------------------------------------------------------------
+between and,not between,in,not in ,like
+---------------------------------------------------------------------------------------
+1)select * from employee where salary between 35000 and 46000;
+2)select * from employee where salary in(35000.5,45000.5);
+It should match 
+3)select * from employee where salary not in(35000.5,45000.5);
+4)select * from employee where name like 's%';
+5)select * from employee where name like '%r';
+6)select * from employee where name like '%n%';
+7)select * from employee where name like '__n%';
+-------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
 
 
 
