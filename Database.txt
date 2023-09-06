@@ -147,6 +147,7 @@ to insert multiple rows
 to drop a table
 14)drop table <table name>
 drop table student;
+in this the table data plus structure will be deleted.
 
 to delete a row from a table
 15)delete from student where rollno=6;
@@ -154,6 +155,7 @@ to delete a row from a table
 to delete all the rows from a table;
 16)delete from student;
 truncate table student;
+in this the table structure will be present.
 
 to clone a table
 17) create table student1 as select * from student;
@@ -161,6 +163,31 @@ to clone a table
 difference  between drop and truncate is 
 in drop whole table data plus the structure is deleted but in truncate the data is delete but the structure will be
 still there.
+
+to insert multiple data
+insert into employee(empno,name,address) values(3,'sunil','hyderabad'),
+(4,'madhu','hyderabad'),(5,'peter','hyderabad'),(6,'Bibhash','calcutta');
+
+
+to remove the duplicate records from a table
+18)select distinct empno,name,address from employee;
+
+*in this only the unique values are displayed.
+
+19)to enter float values
+alter table employee add salary float;
+
+update data
+20)update employee set salary=45000.50 where empno in(3,4);
+update employee set salary=55000.50 where empno=6;
+
+display the data in ascending order 
+21)select * from employee order by empno;
+select * from employee order by empno asc;
+
+
+display the data in descending order 
+22)select * from employee order by empno desc;
 
 
 
