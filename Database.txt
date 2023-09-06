@@ -220,7 +220,25 @@ It should match
 6)select * from employee where name like '%n%';
 7)select * from employee where name like '__n%';
 -------------------------------------------------------------------------------------------------
+Primary key:-
+----------------------------------
+1)we can declare a primary key to a column .
+Then we cannot leave the field empty nor we can enter duplicate value.
+-------------------------
+not null
+------------
+2)if we declare a column as not null then we cannot leave the column empty.
+-----------------------------
+auto_increment
+3)If we declare a column as auto_increment then we neednot to enter any value.It will increment automatically.we can declare the cloumn as primary key also.
 
+create table student(rollno int not null auto_increment,
+    -> name varchar(30) not null,
+    -> address varchar(30) not null,
+    -> primary key(rollno));
+
+insert into student(name,address) values('sunil','Hydrabad');
+---------------------------------------------------------------------------------------------------------------
 
 
 
