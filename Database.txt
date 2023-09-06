@@ -112,6 +112,16 @@ to update the table
 9) update student set address='hydrabad' where rollno=2;
 
 update student set address='hydrabad' where rollno=1;
+update student set phy=78,chem=73,maths=63 where rollno=1;
+update student set phy=75,chem=63,maths=69 where rollno=2;
+update student set total =phy+chem+maths where rollno in(1,2);
+update student set avg =total/3 where rollno in(1,2);
+
+in syntax:-
+expression in(value1,value2,value3);
+in condition is used to reduce the use of multiple or conditions.
+It will be used for select,insert,update and delete.
+
 
 to add a column
 syntax:-alter table <table name> add <column name> <data type>
