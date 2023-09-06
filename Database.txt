@@ -144,6 +144,24 @@ to insert multiple rows
 13)insert into student(rollno,name,address) values(3,'sunil','hyderabad'),
 (4,'madhu','hyderabad'),(5,'peter','hyderabad'),(6,'Bibhash','calcutta');
 
+to drop a table
+14)drop table <table name>
+drop table student;
+
+to delete a row from a table
+15)delete from student where rollno=6;
+
+to delete all the rows from a table;
+16)delete from student;
+truncate table student;
+
+to clone a table
+17) create table student1 as select * from student;
+
+difference  between drop and truncate is 
+in drop whole table data plus the structure is deleted but in truncate the data is delete but the structure will be
+still there.
+
 
 
 
