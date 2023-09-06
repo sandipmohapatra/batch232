@@ -1,0 +1,18 @@
+Database :-
+6 days
+
+database :- structured,un-structured
+my-sql
+oracle
+mongodb
+----------------------------------------------------------
+3 layers in the project
+----------------------------------
+1)frontend --html,css,javascript,angular,react
+2)middleware ---java,servlet,jsp,spring,spring boot,microservices,.net,PHP,python
+3)backend--oracle,mysql,mongo-db
+----------------------------------------------------------------------------------
+
+Database :-
+1)centralized database
+2)
