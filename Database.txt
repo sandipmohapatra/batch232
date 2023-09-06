@@ -100,6 +100,7 @@ to view the structure of a table
 
 to insert data into the table
 6)insert into student values(1,'sandip','Bangalore');
+insert into student(rollno,name) values(2,'Kiran');
 
 to view the data
 7)select * from student;
@@ -107,6 +108,24 @@ to view the data
 to view selected data
 8)select rollno,name from student;
 
+to update the table
+9) update student set address='hydrabad' where rollno=2;
+
+update student set address='hydrabad' where rollno=1;
+
+to add a column
+syntax:-alter table <table name> add <column name> <data type>
+
+10)alter table student add phy int;
+alter table student add chem int;
+alter table student add maths int;
+alter table student add total int;
+alter table student add avg int;
+
+
+to remove a column
+syntax:- alter table <table name> drop column <column name>
+11) alter table student drop column phoneno;
 
 
 
