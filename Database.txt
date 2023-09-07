@@ -405,9 +405,17 @@ insert into vegetable values(2,'tomato',25.50);
  insert into vegetable values(3,'bringal',45.50);
 select sum(price)as totalprice from vegetable;
 select avg(price)as totalprice from vegetable;
+select min(price)as totalprice from vegetable;
+select max(price)as totalprice from vegetable;
 -------------------------------------------------------------------------------------
-
-
+5)to find the binary number
+select bin(10);
+select bin(5);
+--------------------------------------------------
+6)mod means reminder
+select mod(101,4);
+=1
+-----------------------------------------------------
 
 
 
