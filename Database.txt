@@ -309,8 +309,15 @@ String (group of characters) functions
 -----------------------------------------------------
 1)INSTR() :- This function displays the position of the specified substring .
 example:-
+syntax:-
+-----------------
+select instr(string,substring) as <allias name>
+------------------
 select instr('Bharat is a good student','good') as instr_Example;
 --------------------------------------------------------------------------------------
+select instr('Bharat is not a good student he is a very good student','good') as instr_Example;
+*only it will display the first postion.
+-----------------------------------------------------------------------------------
 
 
 
