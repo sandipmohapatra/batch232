@@ -268,8 +268,32 @@ create table student3(rollno int not null,
       phoneno int not null,
      primary key(rollno,name,phoneno));
 --------------------------------------------------------------------------
-
-
+Datatypes
+------------------------
+1)char(30) --We can enter fixed length number,letters,special characters.(0-255)
+2)varchar(30)--We can enter fixed length number,letters,special characters.(0-65535)
+3)text(30)--We can enter fixed length string.(0-255)
+4)Tinytext--We can enter fixed length string.(0-255)
+5)Mediumtext--We can enter fixed length string.(more)
+6)Longtext--We can enter fixed length string.(more)
+-------------------------------------------------------------------------
+numeric datatype
+----------------------------
+1)bit(2)--We can enter fixed length numeric.(1 to 64).
+2)int(4)--We can enter fixed length numeric.(more)
+3)Integer(4)--We can enter fixed length numeric.(more)
+4)float(5)--It is used for decimal numbers.
+5)double(5,2)--It is used for decimal numbers.
+------------------------------------------------------------------
+example 4:-
+-------------------------
+create table emp1(empno int not null,
+     name varchar(30) not null,
+     address char(30) not null,
+      phoneno LongInt not null,
+     insentive float(7) not null, 
+salary double(7,2) not null);
+--------------------------------------------------
 
 
 
