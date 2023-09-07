@@ -368,11 +368,17 @@ The length of the string should be 10 characters other wise the '*' will be adde
 12)select rpad('hello',10,'*');
 The length of the string should be 10 characters other wise the '*' will be added to the right.
 ----------------------------------------------------------------
-13)LTRIM  :- It will cut the extra space or mentioned characters from a string from left side.
+13)LTRIM  :- It will cut the extra space  from left side.
 
 select ltrim('      welcome to mySql     ');
-select rtrim('      welcome to mySql     ');
-select ltrim('welcome to mySql','welcome');
-select rtrim('welcome to mySql','mySql');
--------------------------------------------------------------------------------------
 
+14)RTRIM  :- It will cut the extra space  from right side.
+select rtrim('      welcome to mySql     ');
+-------------------------------------------------------------------------------------
+strcmp():- string compare
+15)select strcmp('Welcome','Welcome'); both are same return 0;
+
+16)select strcmp('Welcome','World'); second string is smaller then the first string return -1;
+
+17)select strcmp('World','Welcome'); first string is smaller then the second string return 1;
+-----------------------------------------------------------------------------------------------------------------
