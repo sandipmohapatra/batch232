@@ -382,3 +382,6 @@ strcmp():- string compare
 
 17)select strcmp('World','Welcome'); first string is smaller then the second string return 1;
 -----------------------------------------------------------------------------------------------------------------
+18)substring():- It a part of a string.
+select substring('welcome to mysql',7,3);
+---------------------------------------------------------------------------------------------
