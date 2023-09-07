@@ -331,12 +331,27 @@ This will display the ascii value of a charcater.
 4) select char_length('apple') as String_length;
 This will count the characters of the string.
 --------------------------------------------------------------------------------------
+select rollno,name,address,char_length(address) as add_length from student2;
 
+select rollno,name,address,concat(name,address) as concat_nameadd from student2;
 
+select rollno,name,address,ascii(name) as firstchar_name from student2;
 
+-------------------------------------------------------------------------------------------------------------
+5)Find_in_set :- this will find a substring position in the set of string.
 
+select Find_in_set('good','Bharat,is,not,a,good,student,he,is,a,very,good,student') as substringPosition;
 
+select Find_in_set('Delhi','Mumbai,Goa,Delhi,Kolkata,Chennai') as postion;
+--------------------------------------------------------------------------------------
+6)format() :- 
+syntax:- 
+select format(string,format string);
 
+select format('.9525','Percent');
+
+select empno,name,format(salary,'C') from employee;
+--------------------------------------------------------------------------------
 
 
 
