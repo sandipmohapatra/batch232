@@ -393,3 +393,26 @@ This will display the reverse of the string.
 
 This will display 5 characters either from the right or from the left.
 --------------------------------------------------------------------------------------------------------- 
+Arithmatic Functions
+-------------------------------------------
+1)select power(5,2) as power_example;
+2)select power(5,3) as cube_example;
+3)select round(765.765) as roundvalue;
+4)sum,avg
+create table vegetable(no int,vegetable char(30),price float);
+insert into vegetable values(1,'potato',35.50);
+insert into vegetable values(2,'tomato',25.50);
+ insert into vegetable values(3,'bringal',45.50);
+select sum(price)as totalprice from vegetable;
+select avg(price)as totalprice from vegetable;
+-------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
