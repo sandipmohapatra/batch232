@@ -353,7 +353,7 @@ select format('.9525','Percent');
 select empno,name,format(salary,'C') from employee;
 --------------------------------------------------------------------------------
 insert(<string>,<from>,<to>,<string>);
-
+This is to insert a string into a location.
 7) select insert('welcome ',9,0,'students');
 
 ------------------------------------------------------------------------------
@@ -362,5 +362,10 @@ To convert the column to upper case and lowercase
 9)select lower(name) from employee;
 10)select lcase(name) from employee;
 --------------------------------------------------------------------------------------
-
-
+11)select lpad('hello',10,'*');
+The length of the string should be 10 characters other wise the '*' will be added to the left.
+--------------------------------------------------------------------------------------------
+12)select rpad('hello',10,'*');
+The length of the string should be 10 characters other wise the '*' will be added to the right.
+----------------------------------------------------------------
+13)
