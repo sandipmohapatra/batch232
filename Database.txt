@@ -2,7 +2,7 @@ Database :-
 6 days
 6,7,8,11,12,13
 --------------------------------------------------------
-database :- structured,un-structured
+database :- Structured,un-structured
 my-sql
 oracle
 mongodb
@@ -239,9 +239,17 @@ create table student(rollno int not null auto_increment,
 
 insert into student(name,address) values('sunil','Hydrabad');
 ---------------------------------------------------------------------------------------------------------------
-
-
-
+ How many primary keys is allowed per table  --1 per table
+if we want to have more than 1 primry key in a table it is known as composite key.
+----------------------------------------------------------------------------------------------------------------
+Composite key
+--------------------------
+create table student232(rollno int not null auto_increment,
+     name varchar(30) not null,
+     address varchar(30) not null,
+     primary key(rollno,name));
+----------------------------------------------------------------------
+when we more then 2 primary key then it is known as composite key.
 
 
 
