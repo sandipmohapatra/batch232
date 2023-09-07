@@ -318,8 +318,19 @@ select instr('Bharat is a good student','good') as instr_Example;
 select instr('Bharat is not a good student he is a very good student','good') as instr_Example;
 *only it will display the first postion.
 -----------------------------------------------------------------------------------
+2)concat() :- This is used to combine 2 strings
 
+select concat(string1,string2) as concatString;
 
+select concat('Hello',' Bharat') as concatString;
+--------------------------------------------------------------------------------
+3)select ascii('A');--65
+select ascii('Apple');--65
+This will display the ascii value of a charcater.
+--------------------------------------------------------------------------------
+4) select char_length('apple') as String_length;
+This will count the characters of the string.
+--------------------------------------------------------------------------------------
 
 
 
