@@ -385,3 +385,11 @@ strcmp():- string compare
 18)substring():- It a part of a string.
 select substring('welcome to mysql',7,3);
 ---------------------------------------------------------------------------------------------
+19) select reverse('apple');
+This will display the reverse of the string.
+--------------------------------------------------------
+20)select right('The name of the subject is MySql',5);
+21)select left('The name of the subject is MySql',5);
+
+This will display 5 characters either from the right or from the left.
+--------------------------------------------------------------------------------------------------------- 
