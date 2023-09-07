@@ -305,7 +305,12 @@ create table emp1(empno int not null,
      insentive float(7) not null, 
 salary double(7,2) not null);
 --------------------------------------------------
-
+String (group of characters) functions
+-----------------------------------------------------
+1)INSTR() :- This function displays the position of the specified substring .
+example:-
+select instr('Bharat is a good student','good') as instr_Example;
+--------------------------------------------------------------------------------------
 
 
 
