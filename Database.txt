@@ -416,8 +416,21 @@ select bin(5);
 select mod(101,4);
 =1
 -----------------------------------------------------
-
-
+7)sign ()
+if the number is greater than zero it returns 1.
+if the number is less than zero it returns -1.
+if the number is equal than zero it returns 0.
+select sign(0);--0
+select sign(-1);--1
+------------------------------------------------------
+8)sqrt()
+select sqrt(4);--2
+to find the sqare root of a number
+------------------------------------------------------------------
+9)square()
+select square(4);
+to find the sqaure of a number.
+-----------------------------------------------------------------------
 
 
 
