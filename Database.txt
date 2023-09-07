@@ -282,15 +282,26 @@ numeric datatype
 1)bit(2)--We can enter fixed length numeric.(1 to 64).
 2)int(4)--We can enter fixed length numeric.(more)
 3)Integer(4)--We can enter fixed length numeric.(more)
-4)float(5)--It is used for decimal numbers.
-5)double(5,2)--It is used for decimal numbers.
+4)BigInt--We can enter numeric.(more)
+5)float(5)--It is used for decimal numbers.
+6)double(5,2)--It is used for decimal numbers.
+7)decimal--It is used to enter decimal numbers.
 ------------------------------------------------------------------
+BOOL :- it is used to enter true or false.Here zero is considered as false and non-zero is considered as true.
+------------------------------------------------------------------------------------------------------------------------
+Date:-we can enter date in this format.(yyyy-mm-dd)
+Timestamp --The value is stored in the second since '1970-01-01 00:00:00'
+Time --This is used to display time in hh:mm:ss
+--------------------------------------------------------------------
+binary -- It is used for binary string datatype .(pdf,doc) size 8000 bytes.
+image --It is also a binary string size is 2GB.
+---------------------------------------------------------------------------------------------------
 example 4:-
 -------------------------
 create table emp1(empno int not null,
      name varchar(30) not null,
      address char(30) not null,
-      phoneno LongInt not null,
+      phoneno bigInt not null,
      insentive float(7) not null, 
 salary double(7,2) not null);
 --------------------------------------------------
