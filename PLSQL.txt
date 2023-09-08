@@ -156,7 +156,30 @@ delete from employee where empno=101;
 dbms_output.put_line('row deleted');
 end;
 -----------------------------------------------------------------------------------------
-
+example-10
+-------------------
+declare
+a number;
+b number;
+oper varchar2(20);
+begin
+a:=:a;
+b:=:b;
+oper:=:oper;
+case 
+when oper='add' then
+dbms_output.put_line('The sum is '||(a+b));
+when oper='sub' then
+dbms_output.put_line('The sub is '||(a-b));
+when oper='mul' then
+dbms_output.put_line('The mul is '||(a*b));
+when oper='div' then
+dbms_output.put_line('The div is '||(a/b));
+else
+dbms_output.put_line('Invalid entry');
+end case;
+end;
+----------------------------------------------------------------------------
 
 
 
