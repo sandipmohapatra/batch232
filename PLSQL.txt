@@ -180,9 +180,61 @@ dbms_output.put_line('Invalid entry');
 end case;
 end;
 ----------------------------------------------------------------------------
+wap to do a bank operation
+deposite
+withdraw
+balance check
+invalid input
+use case when and then.
+-----------------------------------------------------------
+create table bank(accno number primary key, name varchar2(40) not null, address varchar2(30) unique, balance float check(balance >=1000));
 
 
+declare
+accno number;
+name varchar2(30);
+address varchar2(30);
+balance float;
+begin
+accno:=:accno;
+name:=:name;
+address:=:address;
+balance:=:balance;
+insert into bank values(accno,name,address,balance);
+end;
+----------------------------------------------------------------
+declare
+accno number;
+name varchar2(30);
+address varchar2(30);
+balance float:=5000;
+transaction varchar2(30);
+amount float;
+begin
+accno:=:accno;
+name:=:name;
+address:=:address;
+transaction:=:transaction;
+amount:=:amount;
+case
 
+when transaction='deposite' then
+balance:=balance+amount;
+insert into bank values(accno,name,address,balance);
+dbms_output.put_line('Amount deposite');
+
+when transaction='withdraw' then
+balance:=balance-amount;
+if(balance >=1000)then
+insert into bank values(accno,name,address,balance);
+else
+dbms_output.put_line('Amount cannot be withdrawn');
+end if;
+else
+dbms_output.put_line('Invalid input');
+end case;
+end;
+----------------------------------------------------------------
 
 
 
