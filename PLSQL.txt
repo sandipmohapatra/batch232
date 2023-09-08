@@ -236,7 +236,12 @@ end case;
 end;
 ----------------------------------------------------------------
 
-
+employee table
+employee takes some leave
+calculate what the employee no of days worked
+calculate his/her salary.
+if per day salary is 2000.
+-----------------------------------------------------------------
 
 
 
