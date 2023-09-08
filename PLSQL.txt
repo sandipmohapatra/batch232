@@ -1,0 +1,36 @@
+PL-SQL:- Programming Language Structure Query Language
+-----------------------------------------------------------------------------------------------------
+In this we have have 3 parts
+------------------------------------------
+declare :- we can declare any variables.
+begin:- we can write our logic.
+end:- This is the end of the program.
+---------------------------------------------------------
+example  1
+------------------------
+declare 
+a number:=10;
+b number:=20;
+c number;
+begin
+c:=a+b;
+dbms_output.put_line('The sum of 2 numbers are '||c);
+end;
+------------------------------------------------------------------------------------
+example 2
+------------------------
+declare 
+a number:=10;
+b number:=20;
+c number:=30;
+d number:=40;
+e number:=50;
+sum1 number;
+avg1 number;
+begin
+sum1:=a+b+c+d+e;
+dbms_output.put_line('The sum of 5 numbers are '||sum1);
+avg1:=sum1/5;
+dbms_output.put_line('The average of 5 numbers are '||avg1);
+end;
+------------------------------------------------------------------------------------------------
