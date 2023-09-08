@@ -445,5 +445,35 @@ Group by clause
 4) select empno,dept,max(salary) from employee group by dept;
 5)select empno,name,dept,max(salary) from employee group by dept;
 6)select empno,name,dept,min(salary) from employee group by dept;
+7)select dept,count(*) from employee group by dept;
+8)select dept from employee group by dept having sum(salary) > 180000;
+9)select dept from employee group by dept having avg(salary) > 50000;
+10)select dept from employee group by dept having avg(salary) > 30000;
+-------------------------------------------------------------------------------------------------
+*in group by clause we use having clause in place of where clause.
+
+select <column name> from <table name> group by <column name> having <aggregate function name> <comparative operator> <amount>;
+
+aggregate functions are :- 
+sum(),avg(),count(),min(),max()
+------------------------------------------------------------------------------------
+to see the first record
+select * from employee limit 1;
+to see the first 2 records
+select * from employee limit 2;
+------------------------------------------------------------
+to see the last record
+select * from employee limit 7,1;
+
+to see the last 2 record
+select * from employee limit 6,2;
+-----------------------------------------------------------------
+where clause and having clause
+--------------------------------------------------
+where clause filters individual rows where as the having clause filter groups .
+we cannot use where clause with aggregate function.
+-------------------------------------------------------------------------------------------
+
+
 
 
