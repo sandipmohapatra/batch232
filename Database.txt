@@ -427,13 +427,23 @@ select sign(-1);--1
 select sqrt(4);--2
 to find the sqare root of a number
 ------------------------------------------------------------------
-9)square()
-select square(4);
-to find the sqaure of a number.
------------------------------------------------------------------------
-
-
-
-
+9)ABS()
+SELECT abs(10);
+select abs(-10);
+it displays the positive value only.
+------------------------------------------------------------
+10)select ceil(9.4);---10
+11)select floor(9.4);---9
+ceil will display the higher value.
+floor will display the lower value.
+-------------------------------------------------
+Group by clause
+-----------------------------
+1)select empno,dept,sum(salary) from employee group by dept;
+2) select empno,dept,avg(salary) from employee group by dept;
+3)select empno,dept,min(salary) from employee group by dept;
+4) select empno,dept,max(salary) from employee group by dept;
+5)select empno,name,dept,max(salary) from employee group by dept;
+6)select empno,name,dept,min(salary) from employee group by dept;
 
 
