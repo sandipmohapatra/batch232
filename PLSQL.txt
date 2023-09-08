@@ -34,3 +34,22 @@ avg1:=sum1/5;
 dbms_output.put_line('The average of 5 numbers are '||avg1);
 end;
 ------------------------------------------------------------------------------------------------
+to enter dynamic values
+-----------------------------------
+declare
+a number;
+b number;
+c number;
+begin
+a:=:a;
+b:=:b;
+c:=a+b;
+dbms_output.put_line('The sum is '||c);
+end;
+---------------------------------------------------------------
+
+
+
+
+
+
