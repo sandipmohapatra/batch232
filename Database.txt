@@ -473,6 +473,12 @@ where clause and having clause
 where clause filters individual rows where as the having clause filter groups .
 we cannot use where clause with aggregate function.
 -------------------------------------------------------------------------------------------
+example of where clause.
+-------------------------------
+1)select * from employee where name='sunil';
+2)select * from employee where salary>45000;
+3) select * from employee where empno=5;
+-------------------------------------------------------------------
 
 
 
