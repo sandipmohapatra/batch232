@@ -81,8 +81,23 @@ dbms_output.put_line('The greatest is '||c);
 end if;
 end;
 --------------------------------------------------------------
-
-
+wap to enter a number and find it is even or odd.
+wap to enter principal,rate,time and find simple interest.
+si=(p*t*r)/100;
+------------------------------------------------------------------------
+wap to enter a number and find it is even or odd.
+-------------------------------------------
+declare
+a number;
+begin
+a:=:a;
+if(a mod 2=0)then
+dbms_output.put_line('The no is even ');
+else
+dbms_output.put_line('The no is odd');
+end if;
+end;
+---------------------------------------------------------------------
 
 
 
