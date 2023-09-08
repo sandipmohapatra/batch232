@@ -47,6 +47,21 @@ c:=a+b;
 dbms_output.put_line('The sum is '||c);
 end;
 ---------------------------------------------------------------
+greatest of 2 numbers
+-------------------------------------------
+declare
+a number;
+b number;
+begin
+a:=:a;
+b:=:b;
+if(a>b)then
+dbms_output.put_line('The greatest is '||a);
+else
+dbms_output.put_line('The greatest is '||b);
+end if;
+end;
+--------------------------------------------------------------
 
 
 
