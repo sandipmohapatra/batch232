@@ -472,9 +472,25 @@ Assignment
 si=(p*t*r)/100;
 all input take dymanically..
 ---------------------------------------------------------------------------------------------------------
-
-
-
+wap to find out the designation of an employee by entering his/her salary
+--------------------------------------------------------------------------------------------------
+create or replace function design(salary number) return varchar2 is
+begin
+if(salary >=100000) then
+return 'CEO';
+elsif(salary>=50000) then
+return 'Manager';
+elsif(salary>=30000) then
+return 'Worker';
+elsif(salary>=20000) then
+return 'Helper';
+else
+return 'Watchman';
+end if;
+end;
+---------------------------------------------------------------------------------------
+select design(15000) from dual;
+---------------------------------------------------------------------------------------
 
 
 
