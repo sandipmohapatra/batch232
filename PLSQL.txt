@@ -426,7 +426,44 @@ c:=:c;
 dbms_output.put_line('The sum of two numbers is '||addno(a,b,c));
 end;
 -------------------------------------------------------------------------------------------------------
+create 3 more function
+to subtract 2 numbers
+to multiply 2 numbers
+to divide 2 numbers
+-----------------------------------------------------------------------
+create or replace function addno(i number,j number) return number is
+begin
+return i+j;
+end;
 
+create or replace function subno(i number,j number) return number is
+begin
+return i-j;
+end;
+
+create or replace function mulno(i number,j number) return number is
+begin
+return i*j;
+end;
+
+create or replace function divno(i number,j number) return number is
+begin
+return i/j;
+end;
+
+--------------------------------------------------
+declare
+a number;
+b number;
+begin
+a:=:a;
+b:=:b;
+dbms_output.put_line('The sum of two numbers is '||addno(a,b));
+dbms_output.put_line('The sub of two numbers is '||subno(a,b));
+dbms_output.put_line('The mul of two numbers is '||mulno(a,b));
+dbms_output.put_line('The div of two numbers is '||divno(a,b));
+end;
+------------------------------------------------------------------------------------------------------
 
 
 
