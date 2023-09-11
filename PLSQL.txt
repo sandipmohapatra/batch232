@@ -464,7 +464,14 @@ dbms_output.put_line('The mul of two numbers is '||mulno(a,b));
 dbms_output.put_line('The div of two numbers is '||divno(a,b));
 end;
 ------------------------------------------------------------------------------------------------------
-
+Assignment
+-------------------
+1)wap to enter radius and find the area of the circle using function.
+2)wap to enter a number and find if it is even or odd using function.
+3)wap to find simple interest using function,
+si=(p*t*r)/100;
+all input take dymanically..
+---------------------------------------------------------------------------------------------------------
 
 
 
