@@ -552,9 +552,18 @@ select * from employee;
 wap to enter accno,name,balance,
 using procedure.
 ----------------------------------------------------------------
+sequence:- The value will automatically increment .it is used with rollno,accno,slno etc.....
+
+example:- create sequence seq1 increment by 1 start with 1;
+
+create table bank232(accno number,name varchar2(30),address varchar2(30),balance number);
 
 
+insert into bank232 values(seq1.nextval,'sandip','bangalore',3600);
 
+select * from bank232;
+
+---------------------------------------------------------------------------------------------------------------------------
 
 
 
