@@ -286,7 +286,16 @@ select * from circle232;
 wap to display table of a given number.
 5 * 1 =5
 -----------------------------------------------------------------------------------
-
+declare
+x number;
+y number;
+begin
+x:=:x;
+for y in 1..10 loop
+dbms_output.put_line(x || ' * '|| y ||' = '|| x*y);  
+end loop;
+end;
+--------------------------------------------------------------------------------
 
 
 
