@@ -491,8 +491,24 @@ end;
 ---------------------------------------------------------------------------------------
 select design(15000) from dual;
 ---------------------------------------------------------------------------------------
+Procedure
+---------------------
+It is a pl-sql block which execute when called but doesnot return any value.
 
-
+create table employee(empno number,name varchar2(30),address varchar2(30),salary number);
+select * from employee;
+---------------------------------------------------------------------
+create or replace procedure deleteemp is
+begin
+insert into employee values(101,'bharati','Bihar',70000);
+delete from employee where empno=102;
+commit;
+end;
+------------------------------------------------------------------------
+begin
+deleteemp;
+end;
+-----------------------------------------------------------------------------
 
 
 
