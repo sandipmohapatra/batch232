@@ -353,7 +353,32 @@ select * from student;
 
 ----------------------------------------------------------------------------------------------------------------------------------
 
+declare
+rollno student.rollno%type;
+name student.name%type;
+address student.address%type;
+tmarks student.rollno%type;
+avg1 student.rollno%type;
+begin
+rollno:=:rollno;
+name:=:name;
+address:=:address;
+tmarks:=:tmarks;
+avg1:=(tmarks/6);
+if(avg1 >= 80) then 
+insert into student values(rollno,name,address,tmarks,avg1,'First Division');
+elsif(avg1 >= 70) then 
+insert into student values(rollno,name,address,tmarks,avg1,'Second Division');
+elsif(avg1 >= 50) then 
+insert into student values(rollno,name,address,tmarks,avg1,'Third Division');
+else
+insert into student values(rollno,name,address,tmarks,avg1,'Third Division');
+end if;
+end;
 
+
+select * from student;
+-----------------------------------------------------------------------------------------------------
 
 
 
