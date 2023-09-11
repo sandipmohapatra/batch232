@@ -379,6 +379,34 @@ end;
 
 select * from student;
 -----------------------------------------------------------------------------------------------------
+function:- functions are 2 types.
+1)user defined function
+2)pre-defined functions. example:- sum(),avg(),max(),min(),concate().......
+---------------------------------
+user defined function
+-------------------------------
+create or replace function addno(i number,j number) return number is
+begin
+return i+j;
+end;
+--------------------------------------------------
+declare
+a number;
+b number;
+begin
+dbms_output.put_line('The sum of two numbers is'||addno(10,20));
+end;
+----------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
 
 
 
