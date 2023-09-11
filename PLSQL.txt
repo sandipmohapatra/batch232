@@ -413,8 +413,19 @@ begin
 dbms_output.put_line('The sum of two numbers is '||addno(10,20,30));
 end;
 ----------------------------------------------------------
-* allways a function return a value.
+* always a function return a value.
 -----------------------------------------------------------------
+declare
+a number;
+b number;
+c number;
+begin
+a:=:a;
+b:=:b;
+c:=:c;
+dbms_output.put_line('The sum of two numbers is '||addno(a,b,c));
+end;
+-------------------------------------------------------------------------------------------------------
 
 
 
