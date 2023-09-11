@@ -523,9 +523,31 @@ begin
 add_no(5,6,7);
 end;
 -------------------------------------------------------------------
+example-3
+-------------------
+create table employee(empno number,name varchar2(30),address varchar2(30),salary number);
+--------------------------------------------
+create or replace procedure insertemp(empno number,name varchar2,address varchar2,salary number) is
+begin
+insert into employee values(empno,name,address,salary);
+end;
+---------------------------------------------------------------------------------------
+declare 
+empno number;
+name varchar2(30);
+address varchar2(30);
+salary number;
+begin
+empno:=:empno;
+name:=:name;
+address:=:address;
+salary:=:salary;
+insertemp(empno,name,address,salary);
+end;
 
+select * from employee;
 
-
+------------------------------------------------------------------------------------------
 
 
 
