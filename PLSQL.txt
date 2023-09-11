@@ -314,10 +314,44 @@ dbms_output.put_line('try well next time');
 end case;
 end;
 -------------------------------------------------------------------------------------------------------------
+wap to create a table for student
+enter rollno,name,address,total marks ,average and calculate grade.
+if(average >=80) ----First Division
+if(average >=70) ----Second Division
+if(average >=50) ----Third Division
+else
+fail
+----------------------------------------------------------------------------------------------
 
+create table student (rollno number,name varchar2(30),address varchar2(30),tmarks number,avg number,grade varchar2(30));
 
+declare
+rollno number;
+name varchar2(30);
+address varchar2(30);
+tmarks number;
+avg1 number;
+begin
+rollno:=:rollno;
+name:=:name;
+address:=:address;
+tmarks:=:tmarks;
+avg1:=(tmarks/6);
+if(avg1 >= 80) then 
+insert into student values(rollno,name,address,tmarks,avg1,'First Division');
+elsif(avg1 >= 70) then 
+insert into student values(rollno,name,address,tmarks,avg1,'Second Division');
+elsif(avg1 >= 50) then 
+insert into student values(rollno,name,address,tmarks,avg1,'Third Division');
+else
+insert into student values(rollno,name,address,tmarks,avg1,'Third Division');
+end if;
+end;
 
+select * from student;
+ 
 
+----------------------------------------------------------------------------------------------------------------------------------
 
 
 
