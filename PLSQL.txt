@@ -584,6 +584,35 @@ salary:=:salary;
 updateemp(empno,salary);
 end;
 ---------------------------------------------------------------------------------------
+join the two tables
+---------------------------
+select * from employee;
+create table employee(empno number primary key,name varchar2(30),address varchar2(30),salary number);
+select * from dept;
+create table dept(empno number references employee,dept varchar2(30),incre number,phoneno varchar2(20));
+
+insert into dept values(103,'dev',2000,'9900776655');
+
+select a.empno,a.name,a.address,a.salary,b.dept,b.incre,b.phoneno from employee a,dept b where a.empno=b.empno;
+
+--------------------------------------------
+view is a logical table based on another table.
+a view does not contain any data .it only stores the complex querry.
+
+create view emp as select a.empno,a.name,a.address,a.salary,b.dept,b.incre,b.phoneno from employee a,dept b where a.empno=b.empno;
+
+select * from emp;
+---------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
 
 
 
