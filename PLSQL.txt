@@ -548,10 +548,12 @@ end;
 select * from employee;
 
 ------------------------------------------------------------------------------------------
-
 wap to enter accno,name,balance,
 using procedure.
 ----------------------------------------------------------------
+MySQL---auto_increment
+Oracle---sequence
+------------------------------------------------
 sequence:- The value will automatically increment .it is used with rollno,accno,slno etc.....
 
 example:- create sequence seq1 increment by 1 start with 1;
@@ -564,7 +566,24 @@ insert into bank232 values(seq1.nextval,'sandip','bangalore',3600);
 select * from bank232;
 
 ---------------------------------------------------------------------------------------------------------------------------
+example 3
+------------------
+select * from employee;
 
+create or replace procedure updateemp(newempno number,newsalary number) as
+begin
+update employee set salary = newsalary where empno=newempno;
+end;
+
+declare
+empno number;
+salary number;
+begin
+empno:=:empno;
+salary:=:salary;
+updateemp(empno,salary);
+end;
+---------------------------------------------------------------------------------------
 
 
 
