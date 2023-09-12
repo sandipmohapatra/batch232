@@ -650,6 +650,7 @@ drop user sandip123 cascade;
 It is stored as a number in the database and hence one can add number to date ,subtract number to date.
 1)select months_between('28-mar-2019','28-feb-2019') from dual;//dummy table 
 2)select last_day(sysdate)from dual;
+select sysdate from dual;
 or
 2)select last_day('02-feb-2019')from dual;
 select sysdate from dual;
@@ -674,6 +675,56 @@ SELECT ename, TO_CHAR(hiredate, 'year') AS "Day" FROM Emp;
 SELECT ename, TO_CHAR(hiredate, 'yy') AS "Day" FROM Emp;
 SELECT ename, TO_CHAR(hiredate, 'D') AS "Day" FROM Emp;
 -----------------------------------------------------------------------------
+cursor:- 
+cursors are used whenever one want to retrieve more than one record from the database.
+cursor is the amount of memory reserved to accomodate more than one row of the table.
+
+example:- cursor c is select name,empno,salary from employee;
+
+There are 2 types of cursor
+1)implicit cursor:- oracle take care of it.no manipulation.
+2)explicit cursor:- user created cursor.we can do manipulation.
+
+steps
+------------
+1)declare
+2)open
+3)loop 
+4)close
+
+--------------------------------------
+1)%isopen :- the data are repeatedly storing into the cursor variable.
+2)%found:-to know that the cursor pointer points to a data or row .return true when it is inside the table rows.
+3)%notfound:-to know that the cursor pointer points to a data or not.return true when it has reached to the end of the file.
+3)%rowcount:- to count the number wher the cursor is.
+---------------------------------------------------------------------------------------------------
+declare
+cursor c is select name from employee;    //c is a cursor variable
+n varchar2(15);
+begin
+open c;
+loop  <----------------
+fetch c into n;
+exit when c %notfound; <---------------------
+dbms_output.put_line(n);
+end loop;<-----------------------------------
+end;
+
+-----------------------------------------------
+1)declare
+2)creating cursor variable
+3)taking a variable 
+4)begin
+5)open c is to activate the cursor
+6)loop
+7)fetch cursor value into the variable
+8)exit when it has reached the end of the table
+9)printing the n value
+10)end loop
+11)end
+-----------------------------------------------------------
+
+
 
 
 
