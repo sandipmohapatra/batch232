@@ -610,7 +610,10 @@ create view emp as select a.empno,a.name,a.address,a.salary,b.dept,b.incre,b.pho
 
 select * from emp;
 ---------------------------------------------------------------------------------------------------------------------
-
+In this employee is the master table. and dept is the child table.
+we cannot delete any row from the master table which will is used in the child table.
+We have to delete the row from the child table first then we can delete the row from the master table.
+-----------------------------------------------------------------------------------------------------------------------------------------
 
 
 
