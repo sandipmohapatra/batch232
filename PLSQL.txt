@@ -643,7 +643,7 @@ create user amit identified by oracle;
 system/1234 :- DBA .It can grant or revoke perminssion.
 grant dba to amit;---It can do all the opreations.
 revoke dba from amit;
-
+drop user sandip123 cascade;
 --------------------------------------------------------------------------------------------------
  DATE FUNCTION
 ---------------------------------------------------------------------------------------------------------------------
