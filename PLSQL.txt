@@ -743,7 +743,22 @@ end loop;
 close x;
 end;
 --------------------------------------------------
-
+example-3
+------------------
+declare 
+cursor c is select salary,name from employee;
+a varchar2(30);
+b varchar2(30);
+begin
+open c;
+loop
+fetch c into a,b;
+exit when c %notfound;
+dbms_output.put_line(c %rowcount ||' '||b||' salary is  '||a);
+end loop;
+close c;
+end;
+---------------------------------------------------------------------------------------------------------
 
 
 
