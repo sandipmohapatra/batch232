@@ -693,6 +693,8 @@ steps
 4)close
 
 --------------------------------------
+cursor attributes
+--------------------------
 1)%isopen :- the data are repeatedly storing into the cursor variable.
 2)%found:-to know that the cursor pointer points to a data or row .return true when it is inside the table rows.
 3)%notfound:-to know that the cursor pointer points to a data or not.return true when it has reached to the end of the file.
@@ -724,7 +726,23 @@ end;
 11)end
 -----------------------------------------------------------
 
-
+example-2
+-------------------
+declare 
+cempno number;
+cname varchar2(30);
+caddress varchar2(30);
+cursor x is select empno,name,address from employee;
+begin
+open x;
+loop
+fetch x into cempno,cname,caddress;
+exit when x %notfound;
+dbms_output.put_line(cempno||' the name is '||cname||' the address is '||caddress);
+end loop;
+close x;
+end;
+--------------------------------------------------
 
 
 
