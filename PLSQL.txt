@@ -825,8 +825,19 @@ end;
 *The exception part will execute when there is error.
 when there is no error then the exception part will not execute.
 -------------------------------------------------------------------------------------------------
-
-
+example-2
+---------------------------
+declare 
+en number:=106;
+ename varchar2(30);
+begin
+select name into ename from employee where empno=en;
+dbms_output.put_line('Employee name ='||ename);
+exception 
+when NO_DATA_FOUND then
+dbms_output.put_line('Employee doesnot exist');
+end; 
+--------------------------------------------------------------------------
 
 
 
