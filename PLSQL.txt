@@ -759,8 +759,18 @@ end loop;
 close c;
 end;
 ---------------------------------------------------------------------------------------------------------
+index
+-------
+Oracle server index is a schema object that can speedup the retrieval of rows by using a pointer.
+
+There are 2 types of index
+1)unique index which is automatical created by oracle for the fields which we have taken primary key or unique key.
+2)non unique index:-these are columns which are non indexed.we can index manually.so that the data can be accessed faster.
 
 
+example:- create index xyz on employee(name); 
+
+--------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
