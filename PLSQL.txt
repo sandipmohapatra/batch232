@@ -854,11 +854,32 @@ MCQs
 2)javatpoint.com
 3)https://www.geeksforgeeks.org
 
------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------
 If a management system or software follows any of 5-6 rules proposed by E.F.Codd, it qualifies to be a Database Management System (DBMS).
 If a management system or software follows any of 7-9 rules proposed by E.F.Codd, it qualifies to be a semi-Relational Database Management System (semi- RDBMS).
 If a management system or software follows 9-12 rules proposed by E.F. Codd, it qualifies to be a complete Relational Database Management System (RDBMS).
+-----------------------------------------------------------------------------------------------------------------------------
+Trigger:-
+Trigger is a stored procedure,which are automatically executed or fired when some event is occered.
 
+Trigger timing:- before ,after
+Trigger events :- Insert,update,delete
+Trigger type:ROW
+------------------------------------------------------------------------------------
+select * from employee;
+
+create or replace trigger t1
+before insert on employee
+begin
+if(to_char(sysdate,'DY')in('sat','sun'))or(to_char(sysdate,'HH24:MM')not between '08' and '15')
+then RAISE_APPLICATION_ERROR(-20500,'You can insert into employee table only during office hours and office days');
+end if;
+end;
+
+------------------------------------------------------------------------------------------------------------------
+
+insert into employee values(106,'peter','UP',65000,'01-jul-2000');
+---------------------------------------------------------------------------------------------------------------------
 
 
 
