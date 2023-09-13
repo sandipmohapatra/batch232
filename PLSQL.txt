@@ -855,7 +855,9 @@ MCQs
 3)https://www.geeksforgeeks.org
 
 -----------------------------------------------------------------
-
+If a management system or software follows any of 5-6 rules proposed by E.F.Codd, it qualifies to be a Database Management System (DBMS).
+If a management system or software follows any of 7-9 rules proposed by E.F.Codd, it qualifies to be a semi-Relational Database Management System (semi- RDBMS).
+If a management system or software follows 9-12 rules proposed by E.F. Codd, it qualifies to be a complete Relational Database Management System (RDBMS).
 
 
 
