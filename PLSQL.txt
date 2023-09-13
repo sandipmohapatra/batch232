@@ -848,6 +848,15 @@ when DUP_VAL_ON_INDEX then
 dbms_output.put_line('Primary key does not allow to insert duplicate values');
 end;
 -------------------------------------------------------------------------------------------------------------
+MCQs
+-----------------
+1)sunfoundry.com
+2)javatpoint.com
+3)https://www.geeksforgeeks.org
+
+-----------------------------------------------------------------
+
+
 
 
 
