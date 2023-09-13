@@ -778,6 +778,20 @@ example:- create index xyz on employee(name);
 * you create an index on a table column.
 when we delete the table the index will be delete. 
 --------------------------------------------------------------------------------------------------------------------------------------------
+subquerry
+-----------------------
+
+write a query to find the name of employees who get salary more than kiran.
+-------------------------------------------------------------------------------------------------------
+select name from employee where salary >(select salary from employee where name='Kiran');
+
+in this first the inner query will execute then the outer query will execute.
+
+find the second highest salary from the employee table.
+--------------------------------------------------------------
+
+select max(salary) as second_highest_salary from employee where salary<(select max(salary) from employee);
+------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
