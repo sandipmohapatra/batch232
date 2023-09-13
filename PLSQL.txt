@@ -797,6 +797,34 @@ Find the third highest salary from the employee table;
 select * from employee where salary=(select salary from(select distinct salary from employee order by salary desc) where rownum<=3
 minus
 select salary from(select distinct salary from employee order by salary desc) where rownum<=2)
+--------------------------------------------------------------------------------
+exception handling
+-------------------------------
+example:- 
+1)ZERO_DIVIDE
+2)NO_DATA_FOUND
+3)DUP_VAL_ON_INDEX
+---------------------------------------------
+DECLARE
+BEGIN
+EXCEPTION
+END
+----------------------------------------------------------------------------------
+example-1
+---------------------
+declare
+n  number;
+begin
+n:=10/0;
+dbms_output.put_line(n);
+exception
+when zero_divide then
+dbms_output.put_line('The error is divide by zero error');
+end;
+---------------------------------------------------------------------------
+*The exception part will execute when there is error.
+when there is no error then the exception part will not execute.
+-------------------------------------------------------------------------------------------------
 
 
 
