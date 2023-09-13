@@ -838,6 +838,16 @@ when NO_DATA_FOUND then
 dbms_output.put_line('Employee doesnot exist');
 end; 
 --------------------------------------------------------------------------
+example-3
+--------------------------
+begin
+insert into employee values(111,'Sumeet','Mangalore',90000,'01-jul-1980');
+dbms_output.put_line('one row inserted');
+exception
+when DUP_VAL_ON_INDEX then
+dbms_output.put_line('Primary key does not allow to insert duplicate values');
+end;
+-------------------------------------------------------------------------------------------------------------
 
 
 
