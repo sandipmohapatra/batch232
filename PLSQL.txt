@@ -792,7 +792,11 @@ find the second highest salary from the employee table.
 
 select max(salary) as second_highest_salary from employee where salary<(select max(salary) from employee);
 ------------------------------------------------------------------------------------------------------------------------------------------------
-
+Find the third highest salary from the employee table;
+---------------------------------------------------------------------------
+select * from employee where salary=(select salary from(select distinct salary from employee order by salary desc) where rownum<=3
+minus
+select salary from(select distinct salary from employee order by salary desc) where rownum<=2)
 
 
 
