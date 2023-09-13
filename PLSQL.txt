@@ -765,11 +765,18 @@ Oracle server index is a schema object that can speedup the retrieval of rows by
 
 There are 2 types of index
 1)unique index which is automatical created by oracle for the fields which we have taken primary key or unique key.
+
+create table employee(empno number primary key,name varchar2(30) unique key,address varchar2(30));
+unique index are empno,name.
+non-unique index is address.
+
 2)non unique index:-these are columns which are non indexed.we can index manually.so that the data can be accessed faster.
 
 
 example:- create index xyz on employee(name); 
 
+* you create an index on a table column.
+when we delete the table the index will be delete. 
 --------------------------------------------------------------------------------------------------------------------------------------------
 
 
